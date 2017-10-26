@@ -1,0 +1,17 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  width: 100vw;
+  height: 90vh;
+  background: url(../../../public/img/bg.jpg) no-repeat bottom / cover;
+  box-sizing:border-box;
+}
+
+.banner h1 {
+  color: #61dafb;
+  font-weight: 400;
+  font-style: italic;
+  padding-bottom: 15rem;
+}
