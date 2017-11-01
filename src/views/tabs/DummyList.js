@@ -1,14 +1,31 @@
 import React from 'react';
+import  LazyLoad  from 'react-lazy-load';
+import img1 from '../../../public/img/cheetah-003.jpg';
+import img2 from '../../../public/img/image-154.jpeg';
+import img3 from '../../../public/img/wallpapers.jpg';
+
+
+const filler = {
+  height: '10px'
+};
 
 const DummyList = () => {
   return (
     <div>
-      <h2>DummyList</h2>
-      <ul>
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-      </ul>
+      <h1>DummyList</h1>
+      <div style={filler} />
+      <LazyLoad height={762}>
+        <img src={img1} width={1024} />
+      </LazyLoad>
+      <div style={filler} />
+      <LazyLoad height={762}>
+        <img src={img2} width={1024} />
+      </LazyLoad>
+      <div style={filler} />
+      <LazyLoad height={762}>
+        <img src={img3} width={1024} />
+      </LazyLoad>
+      <div style={filler} />
     </div>
   );
 };

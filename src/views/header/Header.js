@@ -6,6 +6,10 @@ import data from '../../utils/tabs.json';
 import styles from './Header.css';
 
 const tabs = data;
+tabs.sort((a, b)=> {
+  return a.order - b.order;
+});
+console.log(tabs);
 
 const Header = () => {
   return (

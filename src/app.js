@@ -15,7 +15,7 @@ function run() {
 
 if (module.hot) {
   module.hot.accept('./views/app/App.js', () => {
-    setTimeout(run());
+    setTimeout(run(), 30000);
   });
 }
 
